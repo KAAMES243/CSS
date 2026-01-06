@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 120px;
+      height: 60px;
+      margin: 10px;
+      background: lightblue;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background: lightgreen;
+    }
+
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 150px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+
+    .absolute {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgb(255, 200, 0);
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: pink;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">this stays Static</div>
+
+<div class="box relative">this stays Relative</div>
+
+<div class="parent">
+  Parent
+  <div class="box absolute">its an absolute exampleAbsolute</div>
+</div>
+
+<div class="box sticky">this is a Sticky Header</div>
+
+<div style="height: 800px;">the content go down<br> when  Scroll down<br>happy life<be></be></div>
+
+<div class="box fixed">cant be move its fixed Fixed</div>
+
+</body>
+</html>
